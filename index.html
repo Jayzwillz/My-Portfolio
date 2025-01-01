@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jah'swill's Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="toggle-container">
+      <button id="toggle-mode">Toggle Dark Mode</button>
+    </div>
+    <header>
+      <h1>Jah'swill's Portfolio</h1>
+      <p>Welcome to my personal space on the web</p>
+    </header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div id="about-div">
+      <section>
+        <img
+          src="./assets/images/background.png"
+          alt="Jah'swills Picture"
+          class="my-pic"
+        />
+      </section>
+      <section id="about" class="hero">
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm Jah'swill Uchechi Emmanuel, an enthusiastic and
+          detail-oriented Front-End Engineering graduate with a strong passion
+          for coding, proficient in JavaScript and React. Skilled in designing
+          and developing scalable web applications with a solid foundation in
+          algorithms and problem-solving. Eager to leverage my expertise in
+          building efficient, user-friendly applications and contribute
+          innovative full-stack solutions to drive innovation and enhance user
+          experiences.
+        </p>
+      </section>
+    </div>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="two-sets">
+          <div class="project">
+            <div class="project-iframe">
+              <iframe
+                src="https://jahswill-react-todo-app.netlify.app/"
+                width="300"
+                height="400"
+                style="border: 1px solid #ccc"
+              ></iframe>
+            </div>
+            <h3>React To-Do App</h3>
+            <p>
+              The Todo Application is a responsive React-based project enabling
+              CRUD operations, pagination, search, and robust error handling. It
+              dynamically fetches data from the JSONPlaceholder API, uses React
+              Router and Hooks, and is styled with responsive CSS. Deployed on
+              Netlify, it ensures efficient and user-friendly task management.
+            </p>
+            <a
+              href="https://jahswill-react-todo-app.netlify.app/"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-iframe">
+              <iframe
+                src="https://css-assignment-by-jahswill.netlify.app/"
+                width="300"
+                height="400"
+                style="border: 1px solid #ccc"
+              ></iframe>
+            </div>
+            <h3>CSS Assignments</h3>
+            <p>
+              The CSS Assignments webpages contains projects showcasing various
+              CSS techniques and implementations. It features a mix of HTML
+              (58.9%) and CSS (41.1%) to practice and demonstrate styling skills
+              effectively.
+            </p>
+            <a
+              href="https://css-assignment-by-jahswill.netlify.app/"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="two-sets">
+          <div class="skill">
+            <h3>JavaScript</h3>
+            <p>Experienced in building interactive web applications.</p>
+          </div>
+          <div class="skill">
+            <h3>HTML & CSS</h3>
+            <p>
+              Proficient in creating responsive and visually appealing web
+              pages.
+            </p>
+          </div>
+        </div>
+        <div class="two-sets">
+          <div class="skill">
+            <h3>React</h3>
+            <p>Skilled in building dynamic and scalable user interfaces.</p>
+          </div>
+          <div class="skill">
+            <h3>Vue.js</h3>
+            <p>Experienced in developing efficient and modular applications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        If you'd like to work together or just say hello, feel free to reach
+        out!
+      </p>
+      <form
+        action="https://formspree.io/f/mdkkpnbq"
+        method="POST"
+        onsubmit="resetForm()"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea
+        >
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2025 Jah'swill's Portfolio. All Rights Reserved.</p>
+    </footer>
+    <script>
+      
+    </script>
+    <script>
+      
+    </script>
+    <script>
+      function resetForm() {
+        // Wait for the submission to process and reset the form
+        setTimeout(() => {
+          document.querySelector("form").reset();
+        }, 1000); // Optional delay for better user experience
+      }
+    </script>
+  </body>
+</html>
