@@ -7,7 +7,7 @@ Welcome to my personal portfolio repository! This project showcases my skills, p
 ## 🚀 Live Demo
 
 You can view the live version of the portfolio here:  
-[**Jah'swill's Portfolio**](https://your-live-demo-link.com)
+[**Jah'swill's Portfolio**](https://jahswill-portfolio.netlify.app)
 
 ---
 
