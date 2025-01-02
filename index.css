@@ -190,6 +190,22 @@ footer {
   background-color: #005a9e;
 }
 
+.social-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-links img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   #contact {
@@ -202,3 +218,5 @@ footer {
     flex-direction: column;
   }
 }
+
+
