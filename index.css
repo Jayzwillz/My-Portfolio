@@ -21,7 +21,7 @@ body.dark-mode {
 }
 
 header {
-  background: #0078d7;
+  background: linear-gradient(135deg, #0078d7, #014274);
   color: #fff;
   padding: 1rem 0;
   text-align: center;
@@ -59,7 +59,7 @@ nav a:hover {
   padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
-  background-color: #0078d7;
+  background: linear-gradient(135deg, #0078d7, #014274);
   color: #fff;
   border-radius: 5px;
 }
@@ -85,7 +85,7 @@ section {
 }
 
 .hero {
-  background: #f4f4f4;
+  background: linear-gradient(135deg, #f4f4f4, #d9e4f5);
   padding: 4vw;
   color: black;
   max-height: fit-content;
@@ -126,7 +126,7 @@ section {
 }
 
 .project button {
-  background-color: #0078d7;
+  background: linear-gradient(135deg, #0078d7, #014274);
   color: white;
   border: none;
   padding: 0.8rem 1.2rem;
@@ -137,7 +137,7 @@ section {
 }
 
 .project button:hover {
-  background-color: #005a9e;
+  background: linear-gradient(135deg, #005a9e, #003e73);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
@@ -198,7 +198,7 @@ footer {
 }
 
 #contact button {
-  background-color: #0078d7;
+  background: linear-gradient(135deg, #0078d7, #014274);
   color: white;
   border: none;
   padding: 0.8rem 1.2rem;
@@ -209,7 +209,7 @@ footer {
 }
 
 #contact button:hover {
-  background-color: #005a9e;
+  background: linear-gradient(135deg, #005a9e, #003e73);
 }
 
 .social-links {
