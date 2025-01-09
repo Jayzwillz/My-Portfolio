@@ -9,8 +9,11 @@
   </head>
   <body>
     <div class="toggle-container">
-      <button id="toggle-mode">Toggle Dark Mode</button>
+      <button id="toggle-mode">
+        <img id="theme-icon" src="./assets/images/moon-icon.png" alt="Toggle Theme" width="30" height="30" />
+      </button>
     </div>
+    
     <header>
       <h1>Jah'swill's Portfolio</h1>
       <p>Welcome to my personal space on the web</p>
@@ -106,11 +109,9 @@
               Router and Hooks, and is styled with responsive CSS. Deployed on
               Netlify, it ensures efficient and user-friendly task management.
             </p>
-            <a
-              href="https://jahswill-react-todo-app.netlify.app/"
-              target="_blank"
-              >View Project</a
-            >
+            <button onclick="window.open('https://jahswill-react-todo-app.netlify.app/', '_blank')">
+              View Project
+            </button>
           </div>
           <div class="project">
             <div class="project-iframe">
@@ -130,15 +131,14 @@
               sections, with a design optimized for various devices and
               interactive buttons for enhanced usability.
             </p>
-            <a
-              href="https://signup-page-by-jayzwillz.netlify.app/"
-              target="_blank"
-              >View Project</a
-            >
+            <button onclick="window.open('https://signup-page-by-jayzwillz.netlify.app/', '_blank')">
+              View Project
+            </button>
           </div>
         </div>
       </div>
     </section>
+    
     <section id="skills">
       <h2>Skills</h2>
       <div class="skills">

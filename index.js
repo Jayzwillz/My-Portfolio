@@ -1,22 +1,30 @@
 const toggleButton = document.getElementById("toggle-mode");
-      toggleButton.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-      });
+const themeIcon = document.getElementById("theme-icon");
+const body = document.body;
 
-      const form = document.querySelector("form");
-      form.addEventListener("submit", (e) => {
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const message = document.getElementById("message").value.trim();
+// Check for saved theme in localStorage or default to dark mode
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark" || !savedTheme) {
+  body.classList.add("dark-mode");
+  themeIcon.src = "./assets/images/sun-icon.png";
+} else {
+  themeIcon.src = "./assets/images/moon-icon.png";
+}
 
-        if (!name || !email || !message) {
-          e.preventDefault();
-          alert("Please fill out all fields.");
-        } else if (!/\S+@\S+\.\S+/.test(email)) {
-          e.preventDefault();
-          alert("Please enter a valid email address.");
-        }
-      });
+// Event listener for theme toggle
+toggleButton.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+
+  // Change icon based on the current theme
+  if (body.classList.contains("dark-mode")) {
+    themeIcon.src = "./assets/images/sun-icon.png";
+    localStorage.setItem("theme", "dark");
+  } else {
+    themeIcon.src = "./assets/images/moon-icon.png";
+    localStorage.setItem("theme", "light");
+  }
+});
+
 
       function resetForm() {
         // Wait for the submission to process and reset the form

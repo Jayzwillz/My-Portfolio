@@ -64,6 +64,10 @@ nav a:hover {
   border-radius: 5px;
 }
 
+#theme-icon:hover {
+  transform: rotate(20deg);
+}
+
 section {
   padding: 2%;
 }
@@ -120,6 +124,24 @@ section {
   left: 0;
   width: 100%;
 }
+
+.project button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project button:hover {
+  background-color: #005a9e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
 
 footer {
   background: #333;
@@ -220,3 +242,7 @@ footer {
 }
 
 
+button:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
